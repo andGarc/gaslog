@@ -75,7 +75,9 @@ st.write("""
 db = deta.Base("gasolinelog-db")
 db_content = db.fetch().items
 df_content = pd.DataFrame(db_content).sort_values(by=['Date'], ascending=False)
-st.dataframe(data=df_content[['Date','Actual_Miles','Expected_Miles','Gallons']])
+df_content['MPG'] = round(df_content['Actual_Miles'] / df_content['Gallons'], 2)
+st.dataframe(data=df_content[['Date','Actual_Miles','Expected_Miles',
+                            'Gallons', 'MPG']])
 
 
 
