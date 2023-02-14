@@ -23,7 +23,7 @@ with st.expander('Log a New Entry ✏️'):
                             min_value=0.0, max_value=20000.0, step=0.01)
 
         expected_miles = st.number_input('Expected Miles', 
-                            min_value=0, max_value=600, step=1)
+                            min_value=0, max_value=800, step=1)
 
 
         # Every form must have a submit button.
