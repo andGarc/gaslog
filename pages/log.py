@@ -8,7 +8,7 @@ import pandas as pd
 deta = Deta(st.secrets['deta_key'])
 
 st.write("""
-# Gas Log
+# MPG Tracker
 """)
 
 with st.expander('Log a New Entry ✏️'):

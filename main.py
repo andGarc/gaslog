@@ -7,8 +7,10 @@ from streamlit_elements import elements, mui, html
 from streamlit_elements import nivo
 
 st.write("""
-# Gas Log
+# MPG Tracker
 """)
+
+st.write('🏗️ main page is construction.')
 
 # Connect to Deta Base with your Project Key
 # deta = Deta(st.secrets['deta_key'])
